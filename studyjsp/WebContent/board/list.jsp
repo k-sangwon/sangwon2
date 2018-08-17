@@ -24,7 +24,7 @@ int count = 0;//전체글의 수
 //int currentPage = Integer.parseInt(pageNum);
     
 List<BoardDataBean> articleList = null;//
-BoardDBBean dbPro = BoardDBBean.getInstance();
+BoardDBBean dbPro = BoardDBBean.getInstance();//.jsp페이지에서 DB연동빈인 BoardDBBean클래스의 메소드에 접근시 필요
 count = dbPro.getArticleCount();//
 
 /*if(count == (currentPage-1)*pageSize)
