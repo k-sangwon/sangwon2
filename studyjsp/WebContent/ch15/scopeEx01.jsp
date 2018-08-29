@@ -5,7 +5,7 @@
   <head>
     <title>Set in Scope Examples</title>
   </head>
-
+<!-- 모든 스코프의 기본값은 page이다 -->
   <body>
     <c:set var="test" value="Page Level Value" scope="page" />
 

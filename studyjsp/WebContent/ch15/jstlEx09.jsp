@@ -7,7 +7,7 @@
 
 <h3>JSTL sql 태그예제 - query</h3>
 
-<sql:query var="rs"  dataSource="jdbc/jsptest">
+<sql:query var="rs"  dataSource="jdbc/jsptesto">
     select * from member 
 </sql:query>
 

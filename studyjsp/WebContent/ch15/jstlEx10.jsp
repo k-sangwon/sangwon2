@@ -6,14 +6,14 @@
 <link rel="stylesheet" href="../css/style.css"/>
 
 <h3>JSTL sql 태그예제 - update, param</h3>
-
-<sql:update dataSource="jdbc/jsptest">
+<!-- excuteupdate() -->
+<sql:update dataSource="jdbc/jsptesto">
     update member set name=? where id= ?
 	<sql:param value="${'홍갈동'}"/>
 	<sql:param value="${'hongkd@aaa.com'}"/> 	
 </sql:update>
-
-<sql:query var="rs"  dataSource="jdbc/jsptest">
+<!-- excuteQuery() -->
+<sql:query var="rs"  dataSource="jdbc/jsptesto">
     select * from member 
 </sql:query>
 
