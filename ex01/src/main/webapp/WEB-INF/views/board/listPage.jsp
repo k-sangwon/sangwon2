@@ -55,7 +55,7 @@
 
 
 				<div class="box-footer">
-
+					<!--JQEURY 를 이용하지 않고 동작  -->
 					<div class="text-center">
 						<ul class="pagination">
 
@@ -80,7 +80,7 @@
 						</ul>
 					</div>
 
-
+						<!--JQEURY 를 이용해야 동작  -->
 					<div class="text-center">
 						<ul class="pagination">
 
@@ -116,7 +116,7 @@
 </section>
 <!-- /.content -->
 
-<form id="jobForm">
+<form id="jobForm"> <!-- 페이지 번호 눌렀을ㄸ -->
   <input type='hidden' name="page" value=${pageMaker.cri.page}>
   <input type='hidden' name="perPageNum" value=${pageMaker.cri.perPageNum}>
 </form>
@@ -128,8 +128,8 @@
 	if (result == 'SUCCESS') {
 		alert("처리가 완료되었습니다.");
 	}
-	
-	$(".pagination li a").on("click", function(event){
+	/*
+	$(".pagination li a").on("click", function(event){ <!-- 페이지 번호 눌렀을ㄸ -->
 		
 		event.preventDefault(); // <a href > 태그의 기능을 취소시키는 기능
 		
@@ -140,7 +140,7 @@
 		jobForm.attr("action","/board/listPage").attr("method", "get");
 		jobForm.submit();
 	});
-	
+	*/
 </script>
 
 <%@include file="../include/footer.jsp"%>

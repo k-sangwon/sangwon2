@@ -104,7 +104,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  </if>  
 </sql>
  
-<select id="listSearch" resultType="BoardVO">
+<select id="listSearch" resultType="BoardVO" parameterType="SearchCriteria">
 <![CDATA[  
   select * 
   from tbl_board 

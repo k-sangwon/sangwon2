@@ -70,6 +70,7 @@ public class BoardController {
    위의 구문에 의하여 해당 jsp 페이지에서 msg키값이 사용가능해진다.
  
  */
+  
   @RequestMapping(value = "/read", method = RequestMethod.GET)
   public void read(@RequestParam("bno") int bno, Model model) throws Exception {
 

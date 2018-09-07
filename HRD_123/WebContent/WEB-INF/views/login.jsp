@@ -8,6 +8,7 @@
 	<h2>회원 로그인</h2>
 
 	<form action="${pageContext.request.contextPath }/login" method="post">
+		<input type="hidden" name="orgReqPath" value="${orgReqPath }">
 		<table>
 			<caption>
 				<div style="color:red">${error }</div>

@@ -49,9 +49,15 @@ public class LoginFilter implements Filter {
 		// session validation
 		System.out.println("login needed....");
 		HttpSession session = request.getSession();
-		if (/* session valid */ false) {
-			
+		String name = (String) session.getAttribute("user");
+		if (name != null) { // already logged in
+			arg2.doFilter(request, response);
 		} else {
+			if (request.getQueryString() != null)
+			{
+				path = path + "?" + request.getQueryString();
+			}
+			request.setAttribute("orgReqPath", path);
 			request.setAttribute("error", "먼저 로그인 하세요");
 			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 		}

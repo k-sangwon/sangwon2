@@ -22,7 +22,7 @@
 
 				<div class='box-body'>
 
-					<select name="searchType">
+					<select name="searchType"> <!-- setsearchType 라고 생각하면됨 -->
 						<option value="n"
 							<c:out value="${cri.searchType == null?'selected':''}"/>>
 							---</option>

@@ -2,8 +2,8 @@ package org.zerock.domain;
 
 public class SearchCriteria extends Criteria{
 
-	private String searchType;
-	private String keyword;
+	private String searchType; //타입부분
+	private String keyword;		// 검색어 쓰는 부분
 	
 	public String getSearchType() {
 		return searchType;
