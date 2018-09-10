@@ -6,6 +6,8 @@ public class Criteria {
   private int page; //페이지번호
   private int perPageNum;//페이지 게시물 개수
 
+  private int rowEnd;
+  private int rowStart;
   public Criteria() {
     this.page = 1;
     this.perPageNum = 5;
