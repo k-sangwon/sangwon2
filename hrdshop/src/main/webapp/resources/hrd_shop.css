@@ -49,7 +49,7 @@ section {
 	margin: 0 5%;
 }
 
-section h2 {
+section h1,h2 {
 	margin: 0px;
 	text-align: center;
 }
