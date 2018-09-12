@@ -22,7 +22,7 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="org.study.shop" />
-	
+	<!--  웹과 관련이 있는 빈들  -->
 	
 	
 </beans:beans>
