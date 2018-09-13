@@ -57,7 +57,7 @@ public class ShopDaoImpl implements ShopDao {
 		} else {
 			return true;
 		}
-		
+		  
 	}
 
 }
