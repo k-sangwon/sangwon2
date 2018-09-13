@@ -4,8 +4,27 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.study.mapper.ShopMapper">
 
-<insert id="insertMember" >
+	<insert id="insertMember">
 		insert into tbl_member_02 
-		values(#{member_id},#{member_name},#{member_pw},#{member_join_date})
+		values (#{member_id}, #{member_name}, #{member_pw}, #{member_join_date})
 	</insert>
+
+	<select id="existMemberTable"  resultType="int">
+		select count(*) from tabs
+		where table_name = 'TBL_MEMBER_02'
+	</select>
+	
+	<update id="createMemberTable">
+		create table tbl_member_02 (
+		    member_id varchar(30) not null primary key,
+		    member_name varchar(50) not null,
+		    member_pw varchar(128) not null,
+		    member_join_date date default sysdate
+		)
+	</update>
+	
+	<select id="existMemberId" resultType = "int" >
+		select count(*) from tbl_member_02
+		where MEMBER_ID = #{member_id}
+	</select>
 </mapper>

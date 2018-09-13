@@ -25,6 +25,7 @@ public class Member {
 		this.member_name = member_name;
 	}
 
+
 	public String getMember_pw() {
 		return member_pw;
 	}
